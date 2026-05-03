@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>متحف الذكريات الصغير 🤍🦅</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fef5f0;
+            font-family: system-ui, 'Segoe UI', 'Cairo', 'Tahoma', sans-serif;
+            padding: 30px 18px 70px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* الصندوق الرئيسي */
+        .memory-box {
+            max-width: 700px;
+            width: 100%;
+            background: #fffaf8;
+            border-radius: 56px;
+            padding: 32px 24px 48px;
+            box-shadow: 0 25px 40px -12px rgba(0, 0, 0, 0.08);
+            border: 1px solid #ffede3;
+        }
+
+        /* عنوان كبير */
+        .hero-museum h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #b35d6e;
+            text-align: center;
+            letter-spacing: -0.5px;
+        }
+        .hero-museum p {
+            text-align: center;
+            color: #c08a7a;
+            margin-bottom: 28px;
+            font-size: 0.95rem;
+        }
+
+        /* الأيقونة الكبيرة */
+        .big-icon {
+            text-align: center;
+            font-size: 3rem;
+            margin: 10px 0 10px;
+        }
+
+        /* الخط الزمني */
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+            margin: 32px 0;
+        }
+        .memory-card {
+            background: #ffffff;
+            border-radius: 32px;
+            padding: 18px 20px;
+            box-shadow: 0 6px 14px #f3e1da;
+            border-right: 6px solid #f6bfb0;
+            transition: 0.1s ease;
+        }
+        .memory-icon {
+            font-size: 1.9rem;
+            display: inline-block;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        .memory-title {
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: #a55266;
+            margin-bottom: 8px;
+        }
+        .memory-desc {
+            font-size: 0.98rem;
+            color: #3a2c2c;
+            line-height: 1.55;
+            padding-right: 8px;
+        }
+        .quote-inside {
+            background: #fef3ed;
+            padding: 10px 14px;
+            border-radius: 24px;
+            margin-top: 12px;
+            font-style: italic;
+            color: #a15848;
+            font-size: 0.93rem;
+        }
+        hr {
+            margin: 8px 0;
+            border: 0;
+            height: 1px;
+            background: #ffe0d4;
+        }
+
+        /* سطر الهدية القادمة */
+        .future-gift {
+            background: #fbeae3;
+            border-radius: 48px;
+            padding: 16px 20px;
+            text-align: center;
+            margin: 30px 0 25px;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #b55c5c;
+            letter-spacing: -0.2px;
+            border: 1px solid #ffd9cd;
+        }
+
+        /* الزر بتاع المفاجأة */
+        .surprise-btn {
+            background: #ffe2d6;
+            border: none;
+            width: 100%;
+            padding: 16px 12px;
+            border-radius: 80px;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #a2455b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            cursor: pointer;
+            transition: 0.2s;
+            font-family: inherit;
+            margin-top: 8px;
+        }
+        .surprise-btn:active {
+            transform: scale(0.97);
+            background: #fad5c4;
+        }
+        .surprise-message {
+            background: #fff3e7;
+            border-radius: 48px;
+            padding: 20px 16px;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 1rem;
+            color: #3e2a2a;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.25s;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+        .surprise-message.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        footer {
+            margin-top: 36px;
+            text-align: center;
+            font-size: 0.7rem;
+            color: #cfb2ac;
+        }
+        @media (max-width: 500px) {
+            .hero-museum h1 {
+                font-size: 1.7rem;
+            }
+            .memory-card {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="memory-box">
+    <div class="big-icon">🎁🤍🦅</div>
+    <div class="hero-museum">
+        <h1>ذاكرتنا في صندوق</h1>
+        <p>حاجاتك اللي فاكره .. و حاجات مش هتتنسى</p>
+    </div>
+
+    <div class="timeline">
+        <!-- 🎁 أول رسالة -->
+        <div class="memory-card">
+            <div class="memory-title"><span class="memory-icon">😂💗</span> أول رسالة وصلت مني</div>
+            <div class="memory-desc">"فيه حد بيراقب هدوئك ورزانتك من بعيد وشايف إنك عملة نادرة في الزمن ده حبيت بس أقول إن شخصيتك بجد تفرض احترامها على الكل بالتوفيق 😍" </div>
+        </div>
+        <!-- 🫀 أول اعتراف حب منك -->
+        <div class="memory-card">
+            <div class="memory-title"><span class="memory-icon">💕</span> أول اعتراف حب منكِ</div>
+            <div class="memory-desc">"You messed with my settings; now I can't do anything without thinking about you."</div>
+        </div>
+        <!-- كوبري ديوا -->
+        <div class="memory-card">
+            <div class="memory-title"><span class="memory-icon">🌉</span> على الكوبري بتاع ديبوا</div>
+            <div class="memory-desc">"واحنا واقفين علي الكوبري بتاع ديبوا كنت عمال تبص وانا شايفاك 🤗🤗🤗"<br> <span style="font-size:0.85rem;">(أول اعتراف غير مباشر بالمراقبة 💘)</span></div>
+        </div>
+        <!-- بعدها بقيتي تراقبيني في الدروس -->
+        <div class="memory-card">
+            <div class="memory-title"><span class="memory-icon">👀</span> مراقبة الدروس</div>
+            <div class="memory-desc">"بعدها بقيتي تراقبيني في الدروس 🙂🥰"</div>
+        </div>
+        <!-- أول مرة بحبك أوي بالعربي -->
+        <div class="memory-card">
+            <div class="memory-title"><span class="memory-icon">💬</span> أول "بحبك أوي" بالعربي</div>
+            <div class="memory-desc">"والله بحبك بجد يا احمد 😭❤️" <br> (بعد القصائد 💌)</div>
+        </div>
+        <!-- اعتراف الحب القديم ورمينا ورانا -->
+        <div class="memory-card">
+            <div class="memory-title"><span class="memory-icon">🕊️</span> الحب القديم والاعتراف</div>
+            <div class="memory-desc">اعترفتِ لي بحبك القديم، وأنا اعترفت لك .. رميناهم ورانا.<br> وكنتي غيرانة منها بس أنا طمنتك 💗</div>
+        </div>
+        <!-- أول مرة نساعد بعض في مادة -->
+        <div class="memory-card">
+            <div class="memory-title"><span class="memory-icon">📚</span> أول مرة نساعد بعض في مادة</div>
+            <div class="memory-desc">"فاكر يوم ما علمتيني حاجة وعلمتك حاجة .. واتساعدنا من غير ما نحس 🤍"</div>
+        </div>
+        <!-- أول رسالة تخليني أحزن -->
+        <div class="memory-card">
+            <div class="memory-title"><span class="memory-icon">💔</span> أول رسالة خلتني أحزن</div>
+            <div class="memory-desc">"I hope you don't get me attached to you and then leave me. When I love, I love truly, and that's what happened with you."</div>
+            <div class="quote-inside">ساعتها مكنتش عارف أنا حاسس بايه بالضبط، زعلان عليكي جدًا وفي نفس الوقت فرحان إنك بتحبيني 🤍</div>
+        </div>
+        <!-- أول ماتشنج لون أزرق -->
+        <div class="memory-card">
+            <div class="memory-title"><span class="memory-icon">💙</span> أول ماتشنج لون أزرق</div>
+            <div class="memory-desc">"لما لبسنا نفس اللون من غير ما نتفق 🤯"</div>
+        </div>
+        <!-- أول مرة تبعتي خد دي 💋 -->
+        <div class="memory-card">
+            <div class="memory-title"><span class="memory-icon">💋</span> أول رسالة مفاجأة</div>
+            <div class="memory-desc">"خد دي 💋" (جلست أفكر فيها يوم كامل 😂)</div>
+        </div>
+        <!-- أول مرة تغيري (الحساب الفيك) -->
+        <div class="memory-card">
+            <div class="memory-title"><span class="memory-icon">🎭</span> أول مرة تغيري واختبريني</div>
+            <div class="memory-desc">الحساب الفيك، الشتايم، وبعدين اعترفتِ إنك إنتِ اللي كنتِ بتختبريني عشان تتأكدي إن مفيش غيرك 😉</div>
+        </div>
+    </div>
+
+    <!-- سطر الهدية القادمة -->
+    <div class="future-gift">
+        ✨ الهدية الجاية إيدك ... لا تزال تكتب. ✨
+    </div>
+
+    <!-- زر المفاجأة -->
+    <button class="surprise-btn" id="surpriseBtn">
+        🎁 اضغطي هنا عندي مفاجأة 💗
+    </button>
+    <div id="surpriseBox" class="surprise-message">
+         أنا بحبك أوي .. وكل حاجة صغيرة فاكرها عشان انتِ الدنيا كلها بالنسبالي 🤍🦅
+    </div>
+    <footer>كل التفاصيل دي فاكره لأنك حبيبتي ❤️</footer>
+</div>
+
+<script>
+    const surpriseButton = document.getElementById('surpriseBtn');
+    const surpriseMsgDiv = document.getElementById('surpriseBox');
+
+    surpriseButton.addEventListener('click', () => {
+        if(surpriseMsgDiv.classList.contains('show')) {
+            surpriseMsgDiv.classList.remove('show');
+            setTimeout(() => {
+                surpriseMsgDiv.classList.add('show');
+            }, 30);
+        } else {
+            surpriseMsgDiv.classList.add('show');
+        }
+        // تختفي بعد 5 ثواني اختياري
+        if(window.surpriseTimeout) clearTimeout(window.surpriseTimeout);
+        window.surpriseTimeout = setTimeout(() => {
+            surpriseMsgDiv.classList.remove('show');
+        }, 5500);
+    });
+</script>
+</body>
+</html>
